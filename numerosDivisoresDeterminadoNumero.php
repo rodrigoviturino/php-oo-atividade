@@ -8,5 +8,6 @@ while ($i <= 10){
     $resultado = $numero % 2;
     echo $resultado;
     echo "<br>";
+    break;
 $i++;
 }
