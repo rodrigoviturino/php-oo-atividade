@@ -6,7 +6,7 @@ $cidade = array(
     "fundacao" => 1554,
     "gentilico" => "Paulista",
     "lema" => "Não sou conduzido, conduzo!",
-    "padroeiro" => "São Paulo",
+    "padroeiro" => "Apóstolo Paulo",
     "prefeito" => "Bruno Covas",
 );
 
