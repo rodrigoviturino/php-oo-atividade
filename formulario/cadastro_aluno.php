@@ -3,8 +3,8 @@
 <label for="nome">Nome:</label>
 <input type="text" id="nome" name="nome"><br>
 
-<label for="sobrenome">Sobrenome:</label>
-<input type="text" id="sobrenome" name="sobrenome"><br>
+<label for="turma">Turma:</label>
+<input type="text" id="turma" name="turma"><br>
  
 <label for="email">Email:</label>
 <input type="mail" id="email" name="email"><br>

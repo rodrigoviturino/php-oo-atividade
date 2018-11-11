@@ -34,7 +34,7 @@ foreach($lista as $item){
 }
 
 arsort($lista);
-echo "<br> LISTA DECRESCENT <br><hr>";
+echo "<br> LISTA DECRESCENTE <br><hr>";
 foreach ($lista as $item) {
     echo $item;
     echo "<br>";

@@ -1,4 +1,4 @@
 <?php
 
-echo "Nome : " . $_GET["nome"] . "<br>";
-echo "turma : " . $_GET["turma"] . "<br>";
+echo "Nome : " . $_POST["nome"] . "<br>";
+echo "turma : " . $_POST["turma"] . "<br>";

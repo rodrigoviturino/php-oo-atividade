@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors',1);
+
 $array = array(
     1,
     2,
@@ -15,7 +18,8 @@ $array = array(
 
 $i = 0;
 
-while($i <= 0){
-    print_r($array);
+while($i < count($array)){
+    print_r($array[$i]);
+    echo "<br>";
 $i++;
 }

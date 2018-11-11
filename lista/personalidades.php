@@ -26,6 +26,15 @@ $personalidades = array(
 "Michael Faraday",
 );
 
-foreach ($personalidades as $personalidade){
-    echo $personalidade . "<br>";
+echo $personalidades;
+$i=0;
+
+while ($i < count($personalidades)){
+    $total = count($personalidades);
+    $i++;
+    echo $personalidades[$i] . "<br>";
+    if ($i == 20 ){
+        echo "total de itens é: " . $i;
+        break;
+    }
 }

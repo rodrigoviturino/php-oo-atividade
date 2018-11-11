@@ -1,4 +1,4 @@
-<form action="processa_form.php" method="get">
+<form action="cad_aluno_post.php" method="POST">
 
 <label for="nome">Nome:</label>
 <input type="text" id="nome" name="nome"><br>
