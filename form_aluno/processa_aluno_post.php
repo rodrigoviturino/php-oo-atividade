@@ -7,3 +7,6 @@ echo "Materia: ";
 foreach($_POST["materias"] as $materia) {
     echo $materia . ",";
 }
+
+echo "<br>";
+echo "Mensagem: " . $_POST["mensagem"];

@@ -21,6 +21,9 @@
         <option value="CSS">CSS</option>
         <option value="JQUERY">JQUERY</option>
     </select>
-<br>
+<br><br>
+<label>Conte um pouco da sua história e porque deseja fazer um curso gratuito nela?</label><br>
+<textarea name="mensagem" cols="30" rows="5"></textarea><br>
+
     <input type="submit" value="Enviar dados">
 </form>
