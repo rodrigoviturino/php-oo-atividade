@@ -9,4 +9,10 @@ foreach($_POST["materias"] as $materia) {
 }
 
 echo "<br>";
-echo "Mensagem: " . $_POST["mensagem"];
+echo "Mensagem: " . $_POST["mensagem"] . "<br>";
+
+echo "Email: " . $_POST["email"] . "<br>";
+echo "Senha: " . $_POST["senha"] . "<br>";
+
+echo "<pre>";
+var_dump($_POST);

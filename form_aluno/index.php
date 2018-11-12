@@ -23,7 +23,13 @@
     </select>
 <br><br>
 <label>Conte um pouco da sua história e porque deseja fazer um curso gratuito nela?</label><br>
-<textarea name="mensagem" cols="30" rows="5"></textarea><br>
+<textarea name="mensagem" cols="30" rows="5"></textarea><br><br>
 
-    <input type="submit" value="Enviar dados">
+<label>Email</label><br>
+<input type="email" name="email"><br>
+
+<label>Senha</label><br>
+<input type="password" name="senha"><br>
+
+<input type="submit" value="Enviar dados">
 </form>
