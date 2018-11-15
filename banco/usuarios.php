@@ -19,7 +19,10 @@ if($resultado->num_rows > 0){
     while($dados = $resultado->fetch_array()){
         echo "ID: " . $dados["id"] . "<br>";
         echo "Email: " .$dados["email"] . "<br>";
-        echo "Senha: " . $dados["senha"] . "<br><hr>";
+        echo "Senha: " . $dados["senha"] . "<br>";
+    if($dados["status"] == 1 ){
+        echo "Status: " . $dados["status"] . "<br><hr>";
+        }
     }
 } else{
     echo "Nenhum registro encontrado";
