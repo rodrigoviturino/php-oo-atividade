@@ -52,13 +52,19 @@ $resultado= $conn->query($sql);
 if($resultado->num_rows > 0){
 
     echo "<table border=1>";
-    echo "<tr><th>ID</th><th>Nome</th><th>Status</th></tr>";
+    echo "<tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Status</th>
+            <th></th>
+        </tr>";
 
     while($dados = $resultado->fetch_array()){
         echo "<tr>";
             echo "<td>" . $dados["id"] . "</td>";
             echo "<td>" . $dados["nome"] . "</td>";
             echo "<td>" . $dados["status"] . "</td>";
+            echo "<td><a href='apagar_tarefa.php?id=".$dados["id"]."'>Apagar</a></td>";
         echo "</tr>";
     }
 } else{
