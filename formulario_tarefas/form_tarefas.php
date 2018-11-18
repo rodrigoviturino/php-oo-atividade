@@ -17,12 +17,13 @@
 <textarea name="detalhes"  cols="50" rows="5"></textarea><br>
 
 <label>Status</label><br>
-<select name="status" id="">
+<select name="status">
     <option value="0">Pendente</option>
     <option value="1">Concluído</option>
 </select>
 <br><br>
 
+<!-- Botão -->
 <input type="submit" value="Enviar">
 
 </form>
