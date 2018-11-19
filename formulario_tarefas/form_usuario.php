@@ -1,3 +1,32 @@
+<?php
+
+    $idUsuario = $_GET["id"];
+    echo "Id usuario: " . $idUsuario;
+
+    if($idUsuario > 0){
+
+        $servidor = "localhost";
+        $usuario = "root";
+        $senha = "";
+        $banco = "curso_phpoo";
+
+        $conn = new mysqli($servidor, $usuario, $senha, $banco);
+        if($conn->connect_error){
+            die("Falha na conexão: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT * FROM usuarios WHERE id = " . $idUsuario;
+
+        $resultado = $conn->query($sql);
+        if($resultado->num_rows > 0){
+            $row = $resultado->fetch_assoc();
+            $email = $row["email"];
+            $senha = $row["senha"];
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,14 +40,16 @@
 <form action="usuario_post.php" method="post">
 
     <label>EMAIL</label><br>
-    <input type="text" name="email"><br>
+    <input type="text" name="email" value="<?=$email?>"><br>
 
     <label>SENHA</label><br>
-    <input type="text" name="senha"><br><br>
+    <input type="text" name="senha" value="<?=$senha?>"><br><br>
 
     <input type="submit">
 
 </form>
+
+<a href="../banco/usuarios.php">Acessar Lista de Usuarios</a>
     
 </body>
 </html>
