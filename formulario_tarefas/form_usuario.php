@@ -3,6 +3,7 @@
     $idUsuario = $_GET["id"];
     echo "Id usuario: " . $idUsuario;
 
+
     if($idUsuario > 0){
 
         $servidor = "localhost";
@@ -22,6 +23,7 @@
             $row = $resultado->fetch_assoc();
             $email = $row["email"];
             $senha = $row["senha"];
+            $id = $row["id"];
         }
     }
 
@@ -45,7 +47,10 @@
     <label>SENHA</label><br>
     <input type="text" name="senha" value="<?=$senha?>"><br><br>
 
-    <input type="submit">
+    <!-- Botão -->
+    <input type="submit" value="Enviar">
+
+    <input type="hidden" name="id" value="<?=$id?>">
 
 </form>
 
